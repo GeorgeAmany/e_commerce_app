@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:new_array_app/screens/login/view.dart';
 import 'package:new_array_app/shared/design/my_bottom_navigation_bar.dart';
 
 class OnBoardScreen1 extends StatelessWidget {
@@ -276,7 +277,7 @@ class OnBoardScreen3 extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (BuildContext context) =>
-                          const MyBottomNavigationBar(),
+                          const LoginScreen(),
                     ),
                   );
                 },

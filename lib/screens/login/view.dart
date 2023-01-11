@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_array_app/screens/register/view.dart';
+import 'package:new_array_app/shared/design/my_bottom_navigation_bar.dart';
 
 import '../../shared/design/my_input.dart';
 import '../forget_password/view.dart';
@@ -71,7 +72,15 @@ class _LoginScreenState extends State<LoginScreen> {
             Padding(
               padding: const EdgeInsetsDirectional.only(start: 63, end: 63),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) =>
+                      const MyBottomNavigationBar(),
+                    ),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   fixedSize: const Size(294, 54),
                 ),
