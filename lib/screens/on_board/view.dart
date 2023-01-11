@@ -25,7 +25,7 @@ class OnBoardScreen1 extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (BuildContext context) =>
-                            const MyBottomNavigationBar(),
+                            const LoginScreen(),
                       ),
                     );
                   },
@@ -123,7 +123,7 @@ class OnBoardScreen2 extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (BuildContext context) =>
-                            const MyBottomNavigationBar(),
+                            const LoginScreen(),
                       ),
                     );
                   },
@@ -221,7 +221,7 @@ class OnBoardScreen3 extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (BuildContext context) =>
-                            const MyBottomNavigationBar(),
+                            const LoginScreen(),
                       ),
                     );
                   },
