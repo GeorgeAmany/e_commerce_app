@@ -1,9 +1,10 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:new_array_app/core/cache_helper.dart';
 
+import '../login/view.dart';
 import '../on_board/view.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -27,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (BuildContext context) => const OnBoardScreen1(),
+          builder: (BuildContext context) => CacheHelper.getIsFirstTime()? const OnBoardScreen1(): const LoginScreen(),
         ),
       );
     });

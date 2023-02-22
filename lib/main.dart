@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:new_array_app/core/cache_helper.dart';
 import 'screens/splash/view.dart';
 
 // dart fix --apply   put const in all project
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await CacheHelper.init();
   runApp(const MyApp());
 }
 

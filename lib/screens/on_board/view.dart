@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:new_array_app/screens/login/view.dart';
 import 'package:new_array_app/shared/design/my_bottom_navigation_bar.dart';
+import '../../core/cache_helper.dart';
 
 class OnBoardScreen1 extends StatelessWidget {
   const OnBoardScreen1({Key? key}) : super(key: key);
@@ -21,6 +22,7 @@ class OnBoardScreen1 extends StatelessWidget {
                 padding: EdgeInsetsDirectional.only(top: 60.h, start: 300.w),
                 child: TextButton(
                   onPressed: () {
+                    CacheHelper.saveIsFirstTime();
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -77,6 +79,7 @@ class OnBoardScreen1 extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
+                  CacheHelper.saveIsFirstTime();
                   Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -119,6 +122,7 @@ class OnBoardScreen2 extends StatelessWidget {
                 padding: EdgeInsetsDirectional.only(top: 60.h, start: 300.w),
                 child: TextButton(
                   onPressed: () {
+                    CacheHelper.saveIsFirstTime();
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -175,6 +179,7 @@ class OnBoardScreen2 extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
+                  CacheHelper.saveIsFirstTime();
                   Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -217,6 +222,7 @@ class OnBoardScreen3 extends StatelessWidget {
                 padding: EdgeInsetsDirectional.only(top: 60.h, start: 300.w),
                 child: TextButton(
                   onPressed: () {
+                    CacheHelper.saveIsFirstTime();
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -273,6 +279,8 @@ class OnBoardScreen3 extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
+                  CacheHelper.saveIsFirstTime();
+
                   Navigator.push(
                     context,
                     MaterialPageRoute(
